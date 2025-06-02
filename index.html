@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🏁 Race to Zero: Sprint Showdown</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-container">
+    <h1>🏁 Sprint Showdown</h1>
+    <p id="instructions">Tap to charge your runner before time runs out!</p>
+
+    <div class="status">
+      <p>⏱️ Time Left: <span id="timer">20</span>s</p>
+      <p>💪 Your Stamina: <span id="player-stamina">0</span></p>
+      <p>🤖 Rival Stamina: <span id="rival-stamina">0</span></p>
+    </div>
+
+    <div class="progress-bars">
+      <div class="bar-container">
+        <div class="bar" id="player-bar"></div>
+      </div>
+      <div class="bar-container">
+        <div class="bar" id="rival-bar"></div>
+      </div>
+    </div>
+
+    <button id="tap-button">🏃 Tap to Power Up!</button>
+    <div id="result"></div>
+    <button id="restart-button">🔁 Play Again</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
